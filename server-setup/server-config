@@ -1,0 +1,16 @@
+#install ruby and apache2-dev
+
+sudo apt-get install ruby1.9.1 apachedev2 build-essential libcurl4-openssl-dev apache2-mpm-worker
+
+#create swap space
+sudo dd if=/dev/zero of=/swap bs=1M count=1024
+sudo mkswap /swap
+sudo swapon /swap
+
+#install passenger
+gem install passenger
+
+#install passenger-apache module
+sudo passenger-install-apache2-module
+
+
