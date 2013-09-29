@@ -14,3 +14,6 @@ gem install passenger
 sudo passenger-install-apache2-module
 
 
+#add email username and password for Gmail proxy in /etc/apache2/envvars
+
+
